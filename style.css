@@ -13,11 +13,17 @@ html {
 }
 
 table {
-    border: 2px solid rgb(200, 200, 200);
-    letter-spacing: 1px;
-    font-size: 0.8rem;
+    border: 2px solid rgb(200, 200, 200); /*the outer border of the table*/
+    letter-spacing: 1px; /*space between the letters*/
+    font-size: 0.8rem; /*size of the font*/
+    border-collapse: collapse; /*removes the space bw the cells*/
 }
 
 th {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(235, 235, 235); /*th is the content of the thead, it is like the td of the thead*/
+}
+
+td, th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px 20px;
 }
