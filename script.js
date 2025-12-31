@@ -1,6 +1,6 @@
 const myLibrary = [];
 
-function Book (id, name, writer) {
+function Book (id, name, writer) { //the constructor function
     this.id = id;
     this.name = name;
     this.writer = writer;
