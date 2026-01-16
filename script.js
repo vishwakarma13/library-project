@@ -11,8 +11,8 @@ function addBookToLibrary (id, name, writer) {
     myLibrary.push(bookObject); //bookObject is pushed into array myLibrary
 }   
 
-addBookToLibrary("1", "Chacha Chaudhary", "Diamond Comics");
-addBookToLibrary("2", "Lotpot", "Diamond Comics");
+addBookToLibrary("1", "Chacha Chaudhary", "Diamond Comics"); //passing values to function
+addBookToLibrary("2", "Lotpot", "Diamond Comics"); //passing values to function
 
 let newLib = myLibrary.map(objInFocus=> objInFocus);
 
