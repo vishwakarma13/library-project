@@ -22,8 +22,9 @@ writerName.textContent = myLibrary[0].writer;//takes out writer name of the firs
 
 //function that loops through the array myLibrary (which stores all the created books)
 function displaysEachBook () {
-    for (i=0; i<myLibrary.length; i++){
+    for (let i=0; i<myLibrary.length; i++){
         console.log(myLibrary[i]);
     }
 };
 
+displaysEachBook ();
