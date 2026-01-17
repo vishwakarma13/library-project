@@ -7,8 +7,8 @@ function Book (id, name, writer) { //the constructor function
 }
 
 function addBookToLibrary (id, name, writer) {
-    // let bookObject = new Book (id, name, writer);
-    myLibrary.push(new Book (id, name, writer)); //bookObject is pushed into array myLibrary
+    let bookObject = new Book (id, name, writer);
+    myLibrary.push(bookObject); //bookObject is pushed into array myLibrary
 }   
 
 addBookToLibrary("1", "Chacha Chaudhary", "Chacha Comics"); //manually passing values to function
