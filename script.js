@@ -14,12 +14,6 @@ function addBookToLibrary (id, name, writer) {
 addBookToLibrary("1", "Chacha Chaudhary", "Chacha Comics"); //manually passing values to function
 addBookToLibrary("2", "Lotpot", "Lotpot Comics"); //manually passing values to function
 
-let bookName = document.querySelector("#bookName");
-let writerName = document.querySelector("#writerName");
-
-bookName.textContent = myLibrary[0].name;//takes out name the first element of the myLibrary array
-writerName.textContent = myLibrary[0].writer;//takes out writer name of the first element of the myLibrary array
-
 //function that loops through the array myLibrary (which stores all the created books)
 function displaysEachBook () {
     for (let i=0; i<myLibrary.length; i++){
