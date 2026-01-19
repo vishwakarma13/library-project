@@ -21,4 +21,6 @@ function displaysEachBook () {
     }
 };
 
+//to add the contents of book in table cells
+
 displaysEachBook ();//calls the displaysEachBook function
