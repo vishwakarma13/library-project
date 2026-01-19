@@ -22,5 +22,8 @@ function displaysEachBook () {
 };
 
 //to add the contents of book in table cells
+let bookname1 = document.querySelector("#bookname1");
+let writername1 = document.querySelector("#writername1");
+let pagesin1 = document.querySelector("#pagesin1");
 
 displaysEachBook ();//calls the displaysEachBook function
