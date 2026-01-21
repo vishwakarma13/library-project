@@ -1,7 +1,7 @@
 const myLibrary = [];
 
-function Book (id, name, writer) { //the constructor function
-    this.id = id;
+function Book (name, writer) { //the constructor function
+    this.id = crypto.randomUUID();
     this.name = name;
     this.writer = writer;
 }
