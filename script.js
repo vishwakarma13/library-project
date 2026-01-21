@@ -1,13 +1,14 @@
 const myLibrary = [];
 
-function Book (name, writer) { //the constructor function
+function Book (name, writer, totalPages) { //the constructor function
     this.id = crypto.randomUUID();
     this.name = name;
     this.writer = writer;
+    this.pages = totalPages;
 }
 
-function addBookToLibrary (name, writer) {
-    let bookObject = new Book (name, writer);
+function addBookToLibrary (name, writer, totalPages) {
+    let bookObject = new Book (name, writer, totalPages);
     myLibrary.push(bookObject); //bookObject is pushed into array myLibrary
 }   
 
