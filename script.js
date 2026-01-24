@@ -12,8 +12,8 @@ function addBookToLibrary (name, writer, totalPages) {
     myLibrary.push(bookObject); //bookObject is pushed into array myLibrary
 }   
 
-addBookToLibrary("Chacha Chaudhary", "Chacha Comics"); //manually passing values to function
-addBookToLibrary("Lotpot", "Lotpot Comics"); //manually passing values to function
+addBookToLibrary("Chacha Chaudhary", "Chacha Comics", "120"); //manually passing values to function
+addBookToLibrary("Lotpot", "Lotpot Comics", "205"); //manually passing values to function
 
 //function that loops through the array myLibrary (which stores all the created books)
 function displaysEachBook () {
