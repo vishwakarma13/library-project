@@ -22,7 +22,7 @@ function displaysEachBook () {
     }
 };
 
-//to add the contents of book1 in table cells
+//selectors given variable name for dom manipulation
 let bookid1 = document.querySelector("#bookid1");
 let bookname1 = document.querySelector("#bookname1");
 let writername1 = document.querySelector("#writername1");
@@ -32,7 +32,7 @@ bookid1.textContent = myLibrary[0].id;
 bookname1.textContent = myLibrary[0].name; //overrides the existing text in the table cell
 writername1.textContent = myLibrary[0].writer; //overrides the existing text in the table cell
 
-
+//selectors given variable name for dom manipulation
 let bookid2 = document.querySelector("#bookid2");
 let bookname2 = document.querySelector("#bookname2");
 let writername2 = document.querySelector("#writername2");
