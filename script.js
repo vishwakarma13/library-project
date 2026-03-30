@@ -1,4 +1,4 @@
-const myLibrary = [];
+const myLibrary = []; // would store the collection of Book objects
 
 function Book (name, writer, totalPages) { //the constructor function
     this.id = crypto.randomUUID();
@@ -8,7 +8,7 @@ function Book (name, writer, totalPages) { //the constructor function
 }
 
 function addBookToLibrary (name, writer, totalPages) {
-    let bookObject = new Book (name, writer, totalPages);
+    let bookObject = new Book (name, writer, totalPages); //calling the book constructor
     myLibrary.push(bookObject); //bookObject is pushed into array myLibrary
 }   
 
