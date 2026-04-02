@@ -41,4 +41,8 @@ totalPages2.textContent = myLibrary[1].pages;
 
 //event listener for adding the book
 let bookAdderButton = document.querySelector("#bookAdderButton");
-bookAdderButton.addEventListener("click", ()=> {alert("button clicked");});
+bookAdderButton.addEventListener("click", ()=> alert("button clicked"));
+
+//even listener for deleting the book
+let deleteButton = document.querySelector("#deleteButton");
+deleteButton.addEventListener("click", ()=> alert("delete button clicked") );
