@@ -15,12 +15,6 @@ function addBookToLibrary (name, writer, totalPages) {
 addBookToLibrary("Chacha Chaudhary", "Chacha Comics", "120"); //manually passing values to function
 addBookToLibrary("Lotpot", "Lotpot Comics", "205"); //manually passing values to function
 
-//function that loops through the array myLibrary containing all the book objects and shows the objects in console
-function displaysEachBook () {
-    for (let i=0; i<myLibrary.length; i++){
-        console.log(myLibrary[i]);
-    }
-};
 
 //selectors given variable name for dom manipulation
 let bookId1 = document.querySelector("#bookId1");
