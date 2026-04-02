@@ -39,4 +39,3 @@ bookName2.textContent = myLibrary[1].name; //overrides the existing text in the 
 writerName2.textContent = myLibrary[1].writer; //overrides the existing text in the table cell
 totalPages2.textContent = myLibrary[1].pages;
 
-displaysEachBook ();//calls the displaysEachBook function
