@@ -39,3 +39,6 @@ bookName2.textContent = myLibrary[1].name; //overrides the existing text in the 
 writerName2.textContent = myLibrary[1].writer; //overrides the existing text in the table cell
 totalPages2.textContent = myLibrary[1].pages;
 
+//event listener for adding the book
+let bookAdderButton = document.querySelector("#bookAdderButton");
+bookAdderButton.addEventListener("click", ()=> {alert("button clicked");});
