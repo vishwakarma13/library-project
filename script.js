@@ -15,7 +15,7 @@ function addBookToLibrary (name, writer, totalPages) {
 addBookToLibrary("Chacha Chaudhary", "Chacha Comics", "120"); //manually passing values to function
 addBookToLibrary("Lotpot", "Lotpot Comics", "205"); //manually passing values to function
 
-//function that loops through the array myLibrary (which stores all the created books)
+//function that loops through the array myLibrary containing all the book objects and shows the objects in console
 function displaysEachBook () {
     for (let i=0; i<myLibrary.length; i++){
         console.log(myLibrary[i]);
@@ -23,24 +23,26 @@ function displaysEachBook () {
 };
 
 //selectors given variable name for dom manipulation
-let bookid1 = document.querySelector("#bookid1");
-let bookname1 = document.querySelector("#bookname1");
-let writername1 = document.querySelector("#writername1");
-let pagesin1 = document.querySelector("#pagesin1");
+let bookId1 = document.querySelector("#bookId1");
+let bookName1 = document.querySelector("#bookName1");
+let writerName1 = document.querySelector("#writerName1");
+let totalPages1 = document.querySelector("#totalPages1");
 
-bookid1.textContent = myLibrary[0].id;
-bookname1.textContent = myLibrary[0].name; //overrides the existing text in the table cell
-writername1.textContent = myLibrary[0].writer; //overrides the existing text in the table cell
+bookId1.textContent = myLibrary[0].id;
+bookName1.textContent = myLibrary[0].name; //overrides the existing text in the table cell
+writerName1.textContent = myLibrary[0].writer; //overrides the existing text in the table cell
+totalPages1.textContent = myLibrary[0].pages;
+
 
 //selectors given variable name for dom manipulation
-let bookid2 = document.querySelector("#bookid2");
-let bookname2 = document.querySelector("#bookname2");
-let writername2 = document.querySelector("#writername2");
-let pagesin2 = document.querySelector("#pagesin2");
+let bookId2 = document.querySelector("#bookId2");
+let bookName2 = document.querySelector("#bookName2");
+let writerName2 = document.querySelector("#writerName2");
+let totalPages2 = document.querySelector("#totalPages2");
 
-bookid2.textContent = myLibrary[1].id;
-bookname2.textContent = myLibrary[1].name; //overrides the existing text in the table cell
-writername2.textContent = myLibrary[1].writer; //overrides the existing text in the table cell
-
+bookId2.textContent = myLibrary[1].id;
+bookName2.textContent = myLibrary[1].name; //overrides the existing text in the table cell
+writerName2.textContent = myLibrary[1].writer; //overrides the existing text in the table cell
+totalPages2.textContent = myLibrary[1].pages;
 
 displaysEachBook ();//calls the displaysEachBook function
