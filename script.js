@@ -63,6 +63,16 @@ function renderlibrary() {
         let writerCell = document.createElement("td");//creates cell
         let pageCell = document.createElement("td");//creates cell
         let deleteCell = document.createElement("td");//creates cell
+
+
+        idCell.textContent = book.id;//adds content to cell
+        nameCell.textContent = book.name;//adds content to cell
+        writerCell.textContent = book.writer;//adds content to cell
+        pageCell.textContent = book.pages;//adds content to cell
+
+
+        
+        
     })
     
 }
@@ -81,12 +91,4 @@ bookForm.addEventListener("submit", (e) => {
 // form container display none
     
 })
-
-//even listener for deleting the book
-let deleteButtons = document.querySelectorAll(".deleteButtons");
-deleteButtons.forEach( singleBtn => {
-    singleBtn.addEventListener("click", () =>{
-        alert("You have clicked the delete button");
-    });
-});
 
