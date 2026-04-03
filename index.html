@@ -10,6 +10,16 @@
 <body>
     <div class="main-container">
         <div class="book1">
+
+            <div id="bookFormContainer" style="display: none;">
+                <form id="bookForm">
+                    <input type="text" id="bookNameInput" placeholder="Book Name" required>
+                    <input type="text" id="writerInput" placeholder="Writer Name" required>
+                    <input type="number" id="pagesInput" placeholder="Total Pages" required>
+                    <button type="submit">Add Book</button>
+                </form>
+            </div>
+            
             <table>
                 <thead> <!--header of the table-->
                     <tr>
