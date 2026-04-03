@@ -64,12 +64,22 @@ bookAdderButton.addEventListener("click", () => {
 });
 
 
+//the function to render the library from the array to webpage
+
+
 let bookForm = document.querySelector("#bookForm");
 bookForm.addEventListener("submit", (e) => {
     e.preventDefault();
     let name = document.querySelector("#bookNameInput").value;
     let writer = document.querySelector("#writerInput").value;
     let pages = document.querySelector("#pagesInput").value;
+
+    addBookToLibrary(name, writer, pages);//calling function which  creates a book object and pushes it to array of books
+
+//add renderlibrary function
+// reset bookform
+// form container display none
+    
 })
 
 //even listener for deleting the book
@@ -79,3 +89,4 @@ deleteButtons.forEach( singleBtn => {
         alert("You have clicked the delete button");
     });
 });
+
