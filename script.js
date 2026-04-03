@@ -54,9 +54,9 @@ function renderlibrary() {
 let bookForm = document.querySelector("#bookForm");
 bookForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    let name = document.querySelector("#bookNameInput").value;
-    let writer = document.querySelector("#writerInput").value;
-    let pages = document.querySelector("#pagesInput").value;
+    let name = document.querySelector("#bookNameInput").value;//the variables have the values user entered
+    let writer = document.querySelector("#writerInput").value;//the variables have the values user entered
+    let pages = document.querySelector("#pagesInput").value;//the variables have the values user entered
 
     addBookToLibrary(name, writer, pages);//calling function which  creates a book object and pushes it to array of books
 
