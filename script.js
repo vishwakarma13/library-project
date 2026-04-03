@@ -52,5 +52,9 @@ function addTableRow () {
 bookAdderButton.addEventListener("click", addTableRow);
 
 //even listener for deleting the book
-let deleteButton = document.querySelector("#deleteButton");
-deleteButton.addEventListener("click", ()=> alert("delete button clicked") );
+let deleteButtons = document.querySelectorAll(".deleteButtons");
+deleteButtons.forEach( singleBtn => {
+    singleBtn.addEventListener("click", () =>{
+        alert("You have clicked the delete button");
+    });
+});
