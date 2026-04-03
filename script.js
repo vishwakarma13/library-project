@@ -44,8 +44,23 @@ function renderlibrary() {
         writerCell.textContent = book.writer;//adds content to cell
         pageCell.textContent = book.pages;//adds content to cell
 
+        let deleteBtn = document.createElement("button");//creates a button
+        deleteBtn.textContent = "Delete";//adding text to the button
+        deleteBtn.classList.add("deleteButton");//adding class name to the button
 
-        
+
+
+        deleteCell.appendChild(deleteBtn);//appending the button to its cell
+
+
+        row.appendChild(idCell);//appending cells to the row
+        row.appendChild(nameCell);//appending cells to the row
+        row.appendChild(writerCell);//appending cells to the row
+        row.appendChild(pageCell);//appending cells to the row
+        row.appendChild(deleteCell);//appending cells to the row
+
+
+        tableBody.appendChild(row);//appending row to the table body
         
     })
     
@@ -58,7 +73,9 @@ bookForm.addEventListener("submit", (e) => {
     let writer = document.querySelector("#writerInput").value;//the variables have the values user entered
     let pages = document.querySelector("#pagesInput").value;//the variables have the values user entered
 
-    addBookToLibrary(name, writer, pages);//calling function which  creates a book object and pushes it to array of books
+    addBookToLibrary(name, writer, pages);//calling function with input values stored in the variable above
+
+
 
 //add renderlibrary function
 // reset bookform
