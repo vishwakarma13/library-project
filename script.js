@@ -63,6 +63,15 @@ bookAdderButton.addEventListener("click", () => {
     formContainer.style.display = "block";//causes the form to show when add book button is clicked
 });
 
+
+let bookForm = document.querySelector("#bookForm");
+bookForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let name = document.querySelector("#bookNameInput").value;
+    let writer = document.querySelector("#writerInput").value;
+    let pages = document.querySelector("#pagesInput").value;
+})
+
 //even listener for deleting the book
 let deleteButtons = document.querySelectorAll(".deleteButtons");
 deleteButtons.forEach( singleBtn => {
