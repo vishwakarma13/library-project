@@ -43,19 +43,6 @@ totalPages2.textContent = myLibrary[1].pages;
 
 //event listener for adding the book
 let bookAdderButton = document.querySelector("#bookAdderButton");
-//function to add tr when the book add button is clicked
-// function addTableRow () {
-//     let tableBody = document.querySelector("#tableBody");
-//     let newRow = document.createElement("tr");
-//     let idCell = document.createElement("td");
-//     idCell.textContent = "ampnu";
-
-//     newRow.appendChild(idCell);//td being added to tr
-
-//     tableBody.appendChild(newRow);//tr being attached to body of the table
-// }
-// bookAdderButton.addEventListener("click", addTableRow);
-
 
 let formContainer = document.querySelector("#bookFormContainer");
 
@@ -65,7 +52,9 @@ bookAdderButton.addEventListener("click", () => {
 
 
 //the function to render the library from the array to webpage
+function renderlibrary() {
 
+}
 
 let bookForm = document.querySelector("#bookForm");
 bookForm.addEventListener("submit", (e) => {
