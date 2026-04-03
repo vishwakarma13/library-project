@@ -15,8 +15,8 @@ function addBookToLibrary (name, writer, totalPages) {
 
 
 
-let bookAdderButton = document.querySelector("#bookAdderButton");
-let formContainer = document.querySelector("#bookFormContainer");
+let bookAdderButton = document.querySelector("#bookAdderButton");//selecting the larger button not the form button
+let formContainer = document.querySelector("#bookFormContainer");//selecting the form to be filled by the user
 
 bookAdderButton.addEventListener("click", () => {
     formContainer.style.display = "block";//causes the form to show when click to add new book button is clicked
@@ -66,9 +66,16 @@ function renderlibrary() {
     
 }
 
+
+
+
+
 let bookForm = document.querySelector("#bookForm");
+//action to happen when add book button is clicked after filling the data
 bookForm.addEventListener("submit", (e) => {
     e.preventDefault();
+
+
     let name = document.querySelector("#bookNameInput").value;//the variables have the values user entered
     let writer = document.querySelector("#writerInput").value;//the variables have the values user entered
     let pages = document.querySelector("#pagesInput").value;//the variables have the values user entered
@@ -76,10 +83,11 @@ bookForm.addEventListener("submit", (e) => {
     addBookToLibrary(name, writer, pages);//calling function with input values stored in the variable above
 
 
+    renderlibrary();//calls renderlibrary function which creates rows and adds data to rows and created the delete button against each row
+    bookForm.reset();//clears the form 
+    formContainer.style.display = "none";
 
-//add renderlibrary function
-// reset bookform
-// form container display none
+
     
-})
+});
 
