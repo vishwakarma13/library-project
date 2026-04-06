@@ -14,7 +14,6 @@ function addBookToLibrary (name, writer, totalPages) {
 
 
 
-
 let bookAdderButton = document.querySelector("#bookAdderButton");//selecting the larger button not the form button
 let formContainer = document.querySelector("#bookFormContainer");//selecting the form to be filled by the user
 
@@ -23,11 +22,11 @@ bookAdderButton.addEventListener("click", () => {
 });
 
 
-//the function to render the library from the array to webpage
+//the function to render the each book object from the array to dom and webpage
 function renderlibrary() {
     let tableBody = document.querySelector("#tableBody");
     tableBody.innerHTML = "";// to clear the table
-    myLibrary.forEach(book => {
+    myLibrary.forEach(book => {//forEach is used for targeting a single element here a single object
 
 
         let row = document.createElement("tr");//creates row
@@ -48,6 +47,13 @@ function renderlibrary() {
         deleteBtn.textContent = "Delete";//adding text to the button
         deleteBtn.classList.add("deleteButton");//adding class name to the button
 
+        //to delete the cell
+        deleteBtn.addEventListener("click", ()=> {
+            const index = myLibrary.indexOf(book);
+            myLibrary.splice(index, 1);
+            renderlibrary();
+        });
+        
 
 
         deleteCell.appendChild(deleteBtn);//appending the button to its cell
@@ -90,4 +96,5 @@ bookForm.addEventListener("submit", (e) => {
 
     
 });
+
 
